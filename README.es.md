@@ -15,8 +15,8 @@ n<div align="center">
 Sin claves API. Sin servicios en la nube. Sin suscripciones.  
 Inteligencia local que analiza tus cambios staged y genera mensajes [Conventional Commits](https://www.conventionalcommits.org/) al instante.
 
-[![npm version](https://img.shields.io/npm/v/ai-commit.svg)](https://www.npmjs.com/package/ai-commit)
-[![CI](https://github.com/liangzhengtao/ai-commit/actions/workflows/ci.yml/badge.svg)](https://github.com/liangzhengtao/ai-commit/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/@liangzhengtao/commit-ai.svg)](https://www.npmjs.com/package/@liangzhengtao/commit-ai)
+[![CI](https://github.com/Serennity007/ai-commit/actions/workflows/ci.yml/badge.svg)](https://github.com/Serennity007/ai-commit/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D16-brightgreen.svg)](https://nodejs.org)
 
@@ -68,7 +68,7 @@ $ aic
 ### Uso único (sin instalar)
 
 ```bash
-npx ai-commit
+npx @liangzhengtao/commit-ai
 ```
 
 ### Instalación global
@@ -274,7 +274,7 @@ $ aic --json
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/liangzhengtao/ai-commit.git
+git clone https://github.com/Serennity007/ai-commit.git
 cd ai-commit
 
 # Instalar dependencias
@@ -293,9 +293,9 @@ node bin/cli.js
 
 | Proyecto | Descripción |
 |----------|-------------|
-| [**awesome-ai-rules**](https://github.com/liangzhengtao/awesome-ai-rules) | 20 reglas de codificación con IA para producción |
-| [**vibe-check**](https://github.com/liangzhengtao/vibe-check) | `npx vibe-check` — Evalúa la preparación de IA de tu proyecto |
-| [**awesome-mcp-servers**](https://github.com/liangzhengtao/awesome-mcp-servers) | Servidores MCP para Cursor, Claude Code y Kimi Code |
+| [**awesome-ai-rules**](https://github.com/Serennity007/awesome-ai-rules) | 20 reglas de codificación con IA para producción |
+| [**vibe-check**](https://github.com/Serennity007/vibe-check) | `npx @liangzhengtao/vibe-check` — Evalúa la preparación de IA de tu proyecto |
+| [**awesome-mcp-servers**](https://github.com/Serennity007/awesome-mcp-servers) | Servidores MCP para Cursor, Claude Code y Kimi Code |
 
 ## 🤝 Contribuir
 
@@ -314,7 +314,7 @@ aic  # ¡pruébalo! 🐕
 
 ## 📄 Licencia
 
-MIT © [liangzhengtao](https://github.com/liangzhengtao)
+MIT © [Serennity007](https://github.com/Serennity007)
 
 ---
 

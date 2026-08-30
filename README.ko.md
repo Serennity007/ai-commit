@@ -16,8 +16,8 @@
 API 키 불필요. 클라우드 서비스 불필요. 구독 불필요.
 스테이징된 변경 사항을 분석하여 [Conventional Commits](https://www.conventionalcommits.org/) 메시지를 즉시 생성하는 순수 온디바이스 인텔리전스입니다.
 
-[![npm version](https://img.shields.io/npm/v/ai-commit.svg)](https://www.npmjs.com/package/ai-commit)
-[![CI](https://github.com/liangzhengtao/ai-commit/actions/workflows/ci.yml/badge.svg)](https://github.com/liangzhengtao/ai-commit/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/@liangzhengtao/commit-ai.svg)](https://www.npmjs.com/package/@liangzhengtao/commit-ai)
+[![CI](https://github.com/Serennity007/ai-commit/actions/workflows/ci.yml/badge.svg)](https://github.com/Serennity007/ai-commit/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D16-brightgreen.svg)](https://nodejs.org)
 
@@ -69,7 +69,7 @@ $ aic
 ### 일회성 사용 (설치 없이)
 
 ```bash
-npx ai-commit
+npx @liangzhengtao/commit-ai
 ```
 
 ### 전역 설치
@@ -275,7 +275,7 @@ $ aic --json
 
 ```bash
 # 저장소 클론
-git clone https://github.com/liangzhengtao/ai-commit.git
+git clone https://github.com/Serennity007/ai-commit.git
 cd ai-commit
 
 # 의존성 설치
@@ -294,9 +294,9 @@ node bin/cli.js
 
 | 프로젝트 | 설명 |
 |---------|------|
-| [**awesome-ai-rules**](https://github.com/liangzhengtao/awesome-ai-rules) | 20개 프로덕션 AI 코딩 규칙 |
-| [**vibe-check**](https://github.com/liangzhengtao/vibe-check) | `npx vibe-check` — 프로젝트의 AI 준비도 평가 |
-| [**awesome-mcp-servers**](https://github.com/liangzhengtao/awesome-mcp-servers) | Cursor, Claude Code, Kimi Code용 MCP 서버 |
+| [**awesome-ai-rules**](https://github.com/Serennity007/awesome-ai-rules) | 20개 프로덕션 AI 코딩 규칙 |
+| [**vibe-check**](https://github.com/Serennity007/vibe-check) | `npx @liangzhengtao/vibe-check` — 프로젝트의 AI 준비도 평가 |
+| [**awesome-mcp-servers**](https://github.com/Serennity007/awesome-mcp-servers) | Cursor, Claude Code, Kimi Code용 MCP 서버 |
 
 ## 🤝 기여하기
 
@@ -315,7 +315,7 @@ aic  # 직접 사용해보세요! 🐕
 
 ## 📄 라이선스
 
-MIT © [liangzhengtao](https://github.com/liangzhengtao)
+MIT © [Serennity007](https://github.com/Serennity007)
 
 ---
 

@@ -16,8 +16,8 @@
 Без ключей API. Без облачных сервисов. Без подписок.
 Чистая локальная интеллектуальная система, которая анализирует ваши проиндексированные изменения и мгновенно генерирует сообщения [Conventional Commits](https://www.conventionalcommits.org/).
 
-[![npm version](https://img.shields.io/npm/v/ai-commit.svg)](https://www.npmjs.com/package/ai-commit)
-[![CI](https://github.com/liangzhengtao/ai-commit/actions/workflows/ci.yml/badge.svg)](https://github.com/liangzhengtao/ai-commit/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/@liangzhengtao/commit-ai.svg)](https://www.npmjs.com/package/@liangzhengtao/commit-ai)
+[![CI](https://github.com/Serennity007/ai-commit/actions/workflows/ci.yml/badge.svg)](https://github.com/Serennity007/ai-commit/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D16-brightgreen.svg)](https://nodejs.org)
 
@@ -69,7 +69,7 @@ $ aic
 ### Разовое использование (без установки)
 
 ```bash
-npx ai-commit
+npx @liangzhengtao/commit-ai
 ```
 
 ### Глобальная установка
@@ -275,7 +275,7 @@ $ aic --json
 
 ```bash
 # Клонировать репозиторий
-git clone https://github.com/liangzhengtao/ai-commit.git
+git clone https://github.com/Serennity007/ai-commit.git
 cd ai-commit
 
 # Установить зависимости
@@ -294,9 +294,9 @@ node bin/cli.js
 
 | Проект | Описание |
 |--------|----------|
-| [**awesome-ai-rules**](https://github.com/liangzhengtao/awesome-ai-rules) | 20 правил ИИ-программирования для продакшена |
-| [**vibe-check**](https://github.com/liangzhengtao/vibe-check) | `npx vibe-check` — оцените готовность вашего проекта к ИИ |
-| [**awesome-mcp-servers**](https://github.com/liangzhengtao/awesome-mcp-servers) | MCP-серверы для Cursor, Claude Code и Kimi Code |
+| [**awesome-ai-rules**](https://github.com/Serennity007/awesome-ai-rules) | 20 правил ИИ-программирования для продакшена |
+| [**vibe-check**](https://github.com/Serennity007/vibe-check) | `npx @liangzhengtao/vibe-check` — оцените готовность вашего проекта к ИИ |
+| [**awesome-mcp-servers**](https://github.com/Serennity007/awesome-mcp-servers) | MCP-серверы для Cursor, Claude Code и Kimi Code |
 
 ## 🤝 Участие в проекте
 
@@ -315,7 +315,7 @@ aic  # Используйте его! 🐕
 
 ## 📄 Лицензия
 
-MIT © [liangzhengtao](https://github.com/liangzhengtao)
+MIT © [Serennity007](https://github.com/Serennity007)
 
 ---
 
