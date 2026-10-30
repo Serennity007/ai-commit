@@ -75,7 +75,7 @@ npx @liangzhengtao/commit-ai
 ### Instalação global
 
 ```bash
-npm install -g ai-commit
+npm install -g @liangzhengtao/commit-ai
 ```
 
 Depois use em qualquer lugar:
@@ -244,7 +244,7 @@ jobs:
           node-version: '20'
       
       - name: Install aic
-        run: npm install -g ai-commit
+        run: npm install -g @liangzhengtao/commit-ai
       
       - name: Run formatter
         run: npm run format

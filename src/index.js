@@ -1,6 +1,6 @@
 'use strict';
 
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
 const chalk = require('chalk');
 const boxen = require('boxen');
 
@@ -11,7 +11,7 @@ const boxen = require('boxen');
 function getStagedDiff() {
   return new Promise((resolve, reject) => {
     try {
-      const diff = execSync('git diff --cached', {
+      const diff = execFileSync('git', ['diff', '--cached', '--no-ext-diff', '--no-textconv'], {
         encoding: 'utf-8',
         maxBuffer: 10 * 1024 * 1024
       });
@@ -29,10 +29,10 @@ function getStagedDiff() {
 function getStagedFiles() {
   return new Promise((resolve, reject) => {
     try {
-      const output = execSync('git diff --cached --name-only', {
+      const output = execFileSync('git', ['diff', '--cached', '--name-only', '-z'], {
         encoding: 'utf-8'
       });
-      const files = output.trim().split('\n').filter(f => f.length > 0);
+      const files = output.split('\0').filter(f => f.length > 0);
       resolve(files);
     } catch (err) {
       reject(new Error('Not a git repository or git not available'));
@@ -565,10 +565,8 @@ function getFileIcon(filePath) {
 function runCommit(message, useHooks = true) {
   return new Promise((resolve, reject) => {
     try {
-      // Escape the message for shell safety
-      const escapedMessage = message.replace(/"/g, '\\"');
-      const hookFlag = useHooks ? '' : ' --no-verify';
-      const output = execSync(`git commit${hookFlag} -m "${escapedMessage}"`, {
+      const args = ['commit', ...(useHooks ? [] : ['--no-verify']), '-m', message];
+      const output = execFileSync('git', args, {
         encoding: 'utf-8'
       });
       resolve(output);

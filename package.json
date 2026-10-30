@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node bin/cli.js",
-    "test": "node test/test.js"
+    "test": "node test/test.js && node test/cli.integration.js"
   },
   "keywords": [
     "ai",
@@ -27,12 +27,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/liangzhengtao/ai-commit.git"
+    "url": "https://github.com/Serennity007/ai-commit.git"
   },
   "bugs": {
-    "url": "https://github.com/liangzhengtao/ai-commit/issues"
+    "url": "https://github.com/Serennity007/ai-commit/issues"
   },
-  "homepage": "https://github.com/liangzhengtao/ai-commit#readme",
+  "homepage": "https://github.com/Serennity007/ai-commit#readme",
   "engines": {
     "node": ">=16"
   },

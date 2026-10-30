@@ -1,5 +1,7 @@
 [English](README.md) | [中文](README.zh.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Español](README.es.md) | [العربية](README.ar.md) | [한국어](README.ko.md) | [Português](README.pt.md) | [Русский](README.ru.md) | [Deutsch](README.de.md)
 
+[源码维护记录](https://github.com/Serennity007/ai-commit/blob/main/CHANGELOG.md) · [项目总导航](https://github.com/Serennity007/repo-catalog/blob/main/README.zh-CN.md)
+
 <div align="center">
 
 # 🤖 `aic` — AI Commit Message 生成器
@@ -68,7 +70,7 @@ npx @liangzhengtao/commit-ai
 ### 全局安装
 
 ```bash
-npm install -g ai-commit
+npm install -g @liangzhengtao/commit-ai
 ```
 
 安装后随时使用：
@@ -237,7 +239,7 @@ jobs:
           node-version: '20'
       
       - name: Install aic
-        run: npm install -g ai-commit
+        run: npm install -g @liangzhengtao/commit-ai
       
       - name: Run formatter
         run: npm run format

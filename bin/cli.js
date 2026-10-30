@@ -56,11 +56,12 @@ ${chalk.bold('Conventional Commits:')}
 const opts = program.opts();
 
 async function main() {
-  console.log();
-  console.log(chalk.bold.cyan('  🤖 aic — AI Commit Message Generator'));
-  console.log(chalk.gray('  ─────────────────────────────────────'));
-  console.log();
-
+  if (!opts.json) {
+    console.log();
+    console.log(chalk.bold.cyan('  🤖 aic — AI Commit Message Generator'));
+    console.log(chalk.gray('  ─────────────────────────────────────'));
+    console.log();
+  }
   // Step 1: Get staged changes
   const spinner = ora('Analyzing staged changes...').start();
 
@@ -75,6 +76,11 @@ async function main() {
   }
 
   if (stagedFiles.length === 0) {
+    if (opts.json) {
+      spinner.stop();
+      console.log(JSON.stringify({ message: null, type: null, scope: null, files: [], dryRun: !!opts.dryRun }));
+      return;
+    }
     spinner.fail(chalk.yellow('No staged changes found'));
     console.log(chalk.gray('  Run `git add <files>` first, then try again.'));
     process.exit(0);
@@ -137,7 +143,7 @@ async function main() {
   // Step 7: Commit
   const commitSpinner = ora('Committing...').start();
   try {
-    const result = await runCommit(message, !opts.noVerify);
+    const result = await runCommit(message, opts.verify);
     commitSpinner.succeed(chalk.green('Committed successfully!'));
     console.log();
     console.log(chalk.gray('  ' + result.trim()));

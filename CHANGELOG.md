@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased · 2026-10-30
+
+- JSON stdout is parseable, including when the index is empty; progress messages remain on stderr.
+- `--no-verify` correctly bypasses hooks; default commits still run them. Messages are passed as literal Git arguments, not shell command text.
+- NUL-delimited staged paths preserve Unicode and whitespace.
+- Correct scoped npm install commands and repository links.
+- Validation: 40 existing checks plus 4 real-CLI scenarios passed on Windows / Node.js 24.18.0. Tests use temporary repositories and controlled hooks. No new npm version has been published.
+
 ## [1.0.0] - 2024-01-01
 
 ### Added

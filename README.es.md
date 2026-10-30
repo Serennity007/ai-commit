@@ -1,5 +1,5 @@
 [English](README.md) | [中文](README.zh.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Español](README.es.md) | [العربية](README.ar.md) | [한국어](README.ko.md) | [Português](README.pt.md) | [Русский](README.ru.md) | [Deutsch](README.de.md)
-n<div align="center">
+<div align="center">
 
 <img src=".banner.svg" width="100%" alt="banner">
 
@@ -74,7 +74,7 @@ npx @liangzhengtao/commit-ai
 ### Instalación global
 
 ```bash
-npm install -g ai-commit
+npm install -g @liangzhengtao/commit-ai
 ```
 
 Luego úsalo en cualquier lugar:
@@ -243,7 +243,7 @@ jobs:
           node-version: '20'
       
       - name: Install aic
-        run: npm install -g ai-commit
+        run: npm install -g @liangzhengtao/commit-ai
       
       - name: Run formatter
         run: npm run format
